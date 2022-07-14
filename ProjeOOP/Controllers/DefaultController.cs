@@ -26,6 +26,10 @@ namespace ProjeOOP.Controllers
         * City sınıfına yeni bir property eklendi(CountYear)
         * Bootstrap ile tasarım iyileşti city sayfasında 
         * Kalıtım öğrenildi. Kalıtım bir sınıfın özelliklerini diğer bir sınıfta  erişebilmesi
+        * Navigation Bar eklendi
+        * RenderBody:Diğer sayfalardan gelecek olan içeriği sayfaya yerleştirmek için kullanılır
+        * olmadan navigationbar eklenmez.
+        * Layout : Sabit Alanlar(Youtube Search)....
         */
 
         void Messages()
