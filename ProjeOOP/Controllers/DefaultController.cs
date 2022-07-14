@@ -25,17 +25,7 @@ namespace ProjeOOP.Controllers
          * Yeni bir sınıf eklendi(Flag)
          * City sınıfına yeni bir property eklendi(CountYear)
          * Bootstrap ile tasarım iyileşti city sayfasında 
-         * Kalıtım öğrenildi. Kalıtım bir sınıfın özelliklerini diğer bir sınıfta  erişebilmesi
-         * Navigation Bar eklendi
-         * RenderBody:Diğer sayfalardan gelecek olan içeriği sayfaya yerleştirmek için kullanılır
-         * olmadan navigationbar eklenmez.
-         * Layout : Sabit Alanlar(Youtube Search)....
-         * ProductControllerın içinde foreach ile dbdeki ürünleri listeleyip UI yansıttık.
-         * NavBardaki isimlendirmeleri duzenledik
-         * Ürün Ekleme işlemini kod aracılığı ile yaptık.
-         * Post :Sayfada bir butona basılınca çalışan metot ve attiribute
-         * Get : Sayfa yüklenince çalışan metot ve attiribute 
-         * MethodOverloading:Bir metotun aynı isimde birden fazla görevi olması
+         
          */
 
         void Messages()

@@ -8,6 +8,23 @@ using System.Threading.Tasks;
 
 namespace ProjeOOP.Controllers
 {
+    /*
+     * * Kalıtım öğrenildi. Kalıtım bir sınıfın özelliklerini diğer bir sınıfta  erişebilmesi
+         * Navigation Bar eklendi
+         * RenderBody:Diğer sayfalardan gelecek olan içeriği sayfaya yerleştirmek için kullanılır
+         * olmadan navigationbar eklenmez.
+         * Layout : Sabit Alanlar(Youtube Search)....
+         * ProductControllerın içinde foreach ile dbdeki ürünleri listeleyip UI yansıttık.
+         * NavBardaki isimlendirmeleri duzenledik
+         * Ürün Ekleme işlemini kod aracılığı ile yaptık.
+         * Post :Sayfada bir butona basılınca çalışan metot ve attiribute
+         * Get : Sayfa yüklenince çalışan metot ve attiribute 
+         * MethodOverloading:Bir metotun aynı isimde birden fazla görevi olması
+         * Ürünün güncellenmesine ait bilgiler sayfasını getirdim 
+            Buton ayarları yapıldı
+            Guncellleme butonuna tıklanıldıgında urun bilgileri gelmekte
+     * 
+     */
     public class ProductController : Controller
     {
         Context context = new Context();
@@ -35,6 +52,12 @@ namespace ProjeOOP.Controllers
             context.Remove(value);
             context.SaveChanges();
             return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public IActionResult UpdateProduct(int id)
+        {
+            var value = context.Products.Where(x => x.ProductId == id).FirstOrDefault();
+            return View(value);
         }
 
     }
