@@ -1,4 +1,5 @@
-﻿
+﻿@using ProjeOOP.Entity
+@model List<Product>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_CoreLayout.cshtml";
@@ -6,3 +7,22 @@
 
 <h1>Products Page</h1>
 
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>ProductName</th>
+        <th>Price</th>
+        <th>Stock</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductId</td>
+            <td>@item.ProductName</td>
+            <td>@item.Price</td>
+            <td>@item.Stock</td>
+        </tr>
+    }
+
+</table>
+<a href="#" class="btn btn-primary">Add New Product</a>

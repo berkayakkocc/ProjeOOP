@@ -30,6 +30,7 @@ namespace ProjeOOP.Controllers
         * RenderBody:Diğer sayfalardan gelecek olan içeriği sayfaya yerleştirmek için kullanılır
         * olmadan navigationbar eklenmez.
         * Layout : Sabit Alanlar(Youtube Search)....
+        * ProductControllerın içinde foreach ile dbdeki ürünleri listeleyip UI yansıttık
         */
 
         void Messages()
