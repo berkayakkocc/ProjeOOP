@@ -44,11 +44,20 @@ namespace ProjeOOP.Controllers
         [HttpPost]
         public IActionResult UpdateCustomer(Customer customer)
         {
-           var value= context.Customers.Where(x => x.Id == customer.Id).FirstOrDefault();
-            value.Name = customer.Name;
-            value.City = customer.City;
-            context.SaveChanges();
-            return RedirectToAction("Index");
+            if (customer.Name.Length >= 6 && customer.City != "" && customer.City.Length >= 3)
+            {
+                var value = context.Customers.Where(x => x.Id == customer.Id).FirstOrDefault();
+                value.Name = customer.Name;
+                value.City = customer.City;
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.message = "Error rule ";
+                return View();
+            }
+           
         }
     }
 }

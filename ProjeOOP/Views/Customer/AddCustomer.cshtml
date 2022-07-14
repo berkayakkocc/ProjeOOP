@@ -1,0 +1,20 @@
+﻿
+@model ProjeOOP.Entity.Customer
+@{
+    ViewData["Title"] = "AddCustomer";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<h1>Add Customer Page</h1>
+
+<form method="post">
+    
+    
+    @Html.Label("Name")
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    @Html.Label("City")
+    @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-info">Add Customer</button>
+</form>
