@@ -9,29 +9,34 @@ namespace ProjeOOP.Controllers
 {
     public class DefaultController : Controller
     {
-       
-       /*
-        * 13 Temmuz 2022-Chapter 14 Günün özeti 
-        * 
-        * Controllerda methodlar yazdık bu methodlar geriye deger dönen ve dönmeyen methodlardı (void,int,string) 
-        * bunları IActionresult ile viewBag anahtar keywordu ile çağırdık
-        * ve bu IActionResult ile yazdıgımız kodun içine giderek yazdıgımız kodları sayfada gösterdik
-        * Kullanımı aşağıda ve kodun içine giderek görüntüleyebiliriz 
-        * ViewBag method içinde kullanımı 
-        * ViewBag.Kullanılandegiskenismi=MethodunIsmi()
-        * Index --> Right Click--> Go to view
-        * 
-        * 14 Temmuz 2022-Günün özeti
-        * Yeni bir sınıf eklendi(Flag)
-        * City sınıfına yeni bir property eklendi(CountYear)
-        * Bootstrap ile tasarım iyileşti city sayfasında 
-        * Kalıtım öğrenildi. Kalıtım bir sınıfın özelliklerini diğer bir sınıfta  erişebilmesi
-        * Navigation Bar eklendi
-        * RenderBody:Diğer sayfalardan gelecek olan içeriği sayfaya yerleştirmek için kullanılır
-        * olmadan navigationbar eklenmez.
-        * Layout : Sabit Alanlar(Youtube Search)....
-        * ProductControllerın içinde foreach ile dbdeki ürünleri listeleyip UI yansıttık
-        */
+
+        /*
+         * 13 Temmuz 2022-Chapter 14 Günün özeti 
+         * 
+         * Controllerda methodlar yazdık bu methodlar geriye deger dönen ve dönmeyen methodlardı (void,int,string) 
+         * bunları IActionresult ile viewBag anahtar keywordu ile çağırdık
+         * ve bu IActionResult ile yazdıgımız kodun içine giderek yazdıgımız kodları sayfada gösterdik
+         * Kullanımı aşağıda ve kodun içine giderek görüntüleyebiliriz 
+         * ViewBag method içinde kullanımı 
+         * ViewBag.Kullanılandegiskenismi=MethodunIsmi()
+         * Index --> Right Click--> Go to view
+         * 
+         * 14 Temmuz 2022-Günün özeti
+         * Yeni bir sınıf eklendi(Flag)
+         * City sınıfına yeni bir property eklendi(CountYear)
+         * Bootstrap ile tasarım iyileşti city sayfasında 
+         * Kalıtım öğrenildi. Kalıtım bir sınıfın özelliklerini diğer bir sınıfta  erişebilmesi
+         * Navigation Bar eklendi
+         * RenderBody:Diğer sayfalardan gelecek olan içeriği sayfaya yerleştirmek için kullanılır
+         * olmadan navigationbar eklenmez.
+         * Layout : Sabit Alanlar(Youtube Search)....
+         * ProductControllerın içinde foreach ile dbdeki ürünleri listeleyip UI yansıttık.
+         * NavBardaki isimlendirmeleri duzenledik
+         * Ürün Ekleme işlemini kod aracılığı ile yaptık.
+         * Post :Sayfada bir butona basılınca çalışan metot ve attiribute
+         * Get : Sayfa yüklenince çalışan metot ve attiribute 
+         * MethodOverloading:Bir metotun aynı isimde birden fazla görevi olması
+         */
 
         void Messages()
         {
