@@ -29,5 +29,13 @@ namespace ProjeOOP.Controllers
             return RedirectToAction("Index");
         }
 
+        public IActionResult DeleteProduct(int id)
+        {
+            var value=context.Products.Where(x => x.ProductId == id).FirstOrDefault();
+            context.Remove(value);
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
     }
 }
