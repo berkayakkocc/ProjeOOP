@@ -9,11 +9,18 @@ namespace ProjeOOP.Controllers
 {
     public class DefaultController : Controller
     {
-       //void Operation()
-       // {
-       //     Class c = new Class();
-       //     c.Multiply();
-       // }
+       
+       /*
+        * 13 Temmuz 2022-14 Dersin özeti 
+        * 
+        * Controllerda methodlar yazdık bu methodlar geriye deger dönen ve dönmeyen methodlardı (void,int,string) 
+        * bunları IActionresult ile viewBag anahtar keywordu ile çağırdık
+        * ve bu IActionResult ile yazdıgımız kodun içine giderek yazdıgımız kodları sayfada gösterdik
+        * Kullanımı aşağıda ve kodun içine giderek görüntüleyebiliriz 
+        * ViewBag method içinde kullanımı 
+        * ViewBag.Kullanılandegiskenismi=MethodunIsmi()
+        * Index --> Right Click--> Go to view
+        */
 
         void Messages()
         {
@@ -94,6 +101,23 @@ namespace ProjeOOP.Controllers
             ViewBag.sum3= Sum2(2, 8);
             ViewBag.factorial3 = Factorial(8);
             return View();
+        }
+        public IActionResult City()
+        {
+            Cities city1 = new Cities();
+            city1.Id = 1;
+            city1.Name = "Istanbul";
+            city1.Country = "Turkey";
+            city1.Population = 2500000;
+
+            ViewBag.id1 = city1.Id;
+            ViewBag.name1 = city1.Name;
+            ViewBag.country1 = city1.Country;
+            ViewBag.population1 = city1.Population;
+
+
+            return View();
+
         }
     }
 }
