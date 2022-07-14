@@ -11,7 +11,7 @@ namespace ProjeOOP.Controllers
     {
        
        /*
-        * 13 Temmuz 2022-14 Dersin özeti 
+        * 13 Temmuz 2022-Chapter 14 Günün özeti 
         * 
         * Controllerda methodlar yazdık bu methodlar geriye deger dönen ve dönmeyen methodlardı (void,int,string) 
         * bunları IActionresult ile viewBag anahtar keywordu ile çağırdık
@@ -20,6 +20,12 @@ namespace ProjeOOP.Controllers
         * ViewBag method içinde kullanımı 
         * ViewBag.Kullanılandegiskenismi=MethodunIsmi()
         * Index --> Right Click--> Go to view
+        * 
+        * 14 Temmuz 2022-Günün özeti
+        * Yeni bir sınıf eklendi(Flag)
+        * City sınıfına yeni bir property eklendi(CountYear)
+        * Bootstrap ile tasarım iyileşti city sayfasında 
+        * Kalıtım öğrenildi. Kalıtım bir sınıfın özelliklerini diğer bir sınıfta  erişebilmesi
         */
 
         void Messages()
@@ -110,6 +116,8 @@ namespace ProjeOOP.Controllers
             city.Country = "Turkey";
             city.Population = 15636000;
             city.CountYear = 2022;
+            city.Color1 = "Red";
+            city.Color2 = "White";
 
 
             ViewBag.id1 = city.Id;
@@ -117,12 +125,17 @@ namespace ProjeOOP.Controllers
             ViewBag.country1 = city.Country;
             ViewBag.population1 = city.Population;
             ViewBag.countYear1 = city.CountYear;
+            ViewBag.color1 = city.Color1;
+            ViewBag.color2 = city.Color2;
+            ViewBag.color3 = city.Color3;
 
             city.Id = 2;
             city.Name = "Skopje";
             city.Country = "Macedonia";
             city.Population = 606000;
             city.CountYear = 2022;
+            city.Color1 = "Yellow";
+            city.Color2 = "Red";
 
 
             ViewBag.id2 = city.Id;
@@ -130,6 +143,10 @@ namespace ProjeOOP.Controllers
             ViewBag.country2 = city.Country;
             ViewBag.population2 = city.Population;
             ViewBag.countYear2 = city.CountYear;
+            
+            ViewBag.color1_2 = city.Color1;
+            ViewBag.color2_2 = city.Color2;
+            ViewBag.color3_2 = city.Color3;
 
 
 

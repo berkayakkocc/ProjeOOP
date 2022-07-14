@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ProjeOOP.Example
 {
-    public class Cities
+    public class Cities:Flag// Kalıtım-Inheritance
     {
         public int Id { get; set; }
         public string Name { get; set; }
