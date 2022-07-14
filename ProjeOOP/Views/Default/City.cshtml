@@ -2,23 +2,35 @@
 @{
     Layout = null;
 }
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 
-<a href="/Default/Customer"> Customer Page</a>
-<a href="/Default/Index"> Index Page</a>
 <h1>Cities Page</h1>
-<table>
+<table class="table table-bordered">
     <tr>
         <th>#</th>
         <th>Name</th>
         <th>Country</th>
         <th>Population</th>
+        <th>Count Year</th>
     </tr>
     <tr>
         <td>@ViewBag.id1</td>
         <td>@ViewBag.name1</td>
         <td>@ViewBag.country1</td>
         <td>@ViewBag.population1</td>
+        <td>@ViewBag.countYear1</td>
+
+
+    </tr>
+    <tr>
+        <td>@ViewBag.id2</td>
+        <td>@ViewBag.name2</td>
+        <td>@ViewBag.country2</td>
+        <td>@ViewBag.population2</td>
+        <td>@ViewBag.countYear2</td>
     </tr>
 </table>
+
+<a href="/Default/Products" class="btn btn-info" > Go to Products Page</a>
 
 

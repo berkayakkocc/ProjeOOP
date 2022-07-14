@@ -104,16 +104,34 @@ namespace ProjeOOP.Controllers
         }
         public IActionResult City()
         {
-            Cities city1 = new Cities();
-            city1.Id = 1;
-            city1.Name = "Istanbul";
-            city1.Country = "Turkey";
-            city1.Population = 2500000;
+            Cities city = new Cities();
+            city.Id = 1;
+            city.Name = "Istanbul";
+            city.Country = "Turkey";
+            city.Population = 15636000;
+            city.CountYear = 2022;
 
-            ViewBag.id1 = city1.Id;
-            ViewBag.name1 = city1.Name;
-            ViewBag.country1 = city1.Country;
-            ViewBag.population1 = city1.Population;
+
+            ViewBag.id1 = city.Id;
+            ViewBag.name1 = city.Name;
+            ViewBag.country1 = city.Country;
+            ViewBag.population1 = city.Population;
+            ViewBag.countYear1 = city.CountYear;
+
+            city.Id = 2;
+            city.Name = "Skopje";
+            city.Country = "Macedonia";
+            city.Population = 606000;
+            city.CountYear = 2022;
+
+
+            ViewBag.id2 = city.Id;
+            ViewBag.name2 = city.Name;
+            ViewBag.country2 = city.Country;
+            ViewBag.population2 = city.Population;
+            ViewBag.countYear2 = city.CountYear;
+
+
 
 
             return View();

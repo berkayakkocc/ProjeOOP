@@ -11,6 +11,7 @@ namespace ProjeOOP.Example
         public string Name { get; set; }
         public string Country { get; set; }
         public int Population { get; set; }
+        public int CountYear { get; set; }
 
     }
 }
